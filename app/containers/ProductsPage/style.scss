@@ -1,0 +1,151 @@
+.products-page {
+
+    .products-page-body {
+        text-align: center;
+        align-content: center;
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-rows: 0.1fr 0.3fr;
+        grid-template-areas:
+                "filterForm    filterForm  filterForm "
+                "addCategory   productsTable addProduct  ";
+                
+                  
+    }
+
+    input, select {
+        border: 1px solid #888;
+        float: right;
+
+        width : 100%;
+        margin: 0;
+
+        /*
+        -webkit-box-sizing: border-box; /* For legacy WebKit based browsers
+        -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers
+        box-sizing: border-box;
+        */
+    }
+
+    form {
+        width: 100%;
+        margin: 20px;
+    }
+
+    label {
+        float:left;
+    }
+
+    span {
+        display: block;
+        overflow: hidden;
+        padding: 0 4px 0 6px
+    }
+
+    th, td {
+
+    }
+
+    table {
+        grid-area: productsTable;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    th, td {
+        vertical-align: middle;
+    }
+
+    th {
+        height: 50px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .dataRow:hover {
+        background-color: #f5f5f5;
+    }
+
+
+
+    .AddProduct {
+        grid-area: addProduct;
+        top: 0;
+        margin-top: 100px;
+        margin-right: 40px;
+    }
+
+
+    .AddProductForm {
+        margin: 20px;
+    }
+
+    .AddProductForm div {
+        padding: 5px;
+    }
+
+    .AddProductBtn {
+        background-color: #f0f0f5;
+    }
+
+
+
+    .AddCategory {
+        grid-area: addCategory;
+        top: 0;
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+
+    .AddCategoryForm {
+        margin: 20px;
+    }
+
+    .AddCategoryForm div {
+        padding: 5px;
+    }
+
+    .AddCategoryBtn {
+        background-color: #f0f0f5;
+    }
+
+
+    label {
+        padding-right: 5px;
+    }
+
+
+
+    .DeleteProductBtn {
+        height: 16px;
+        width: 26px;
+        display: flex;
+        margin: auto;
+        padding-right: 10px;
+    }
+
+
+    .FilterProductsForm {
+        grid-area: filterForm;
+        width: 100%;
+    }
+
+    .FilterProductsForm p span {
+        display: block;
+        overflow: hidden;
+        padding: 0 4px 0 6px
+    }
+
+    .FilterProductsForm p input {
+        float: left;
+    }
+
+    .ToggleProductInStock {
+        display: flex;
+        margin: auto;
+    }
+
+}
